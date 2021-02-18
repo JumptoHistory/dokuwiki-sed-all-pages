@@ -3,7 +3,7 @@ Use sed for all the pages on dokuwiki
 
 Usage:
 
-    dokuwiki-sed-all-pages.sh \<dokuwiki path\> \<username\> \<sed script\> \<commit message\>   
+    dokuwiki-sed-all-pages.sh <dokuwiki path> <username> <sed script> <commit message>   
     
 Description:
 

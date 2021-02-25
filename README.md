@@ -13,4 +13,4 @@ Example:
   
     ./dokuwiki-sed-all-pages.sh /var/www/dokuwiki my_name 's/Hate you/Love you/g' 'Changed mind'
     
-Note: nkf needs to be installed for pages that have Japanese text in the name.
+Note: nkf needs to be installed for pages that have non ASCII UTF-8 characters in their names.

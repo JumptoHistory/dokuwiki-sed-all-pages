@@ -13,7 +13,7 @@ do
 
 	sudo $1/bin/dwpage.php -u $2 checkout "$page" "$WORK_DIR/$page"
 	[ $? -ne 0 ] && continue
-	sudo sed -i "$3" "$WORK_DIR/$page"
-	sudo $1/bin/dwpage.php -u $2 commit -m "$4" "$WORK_DIR/$page" "$page"
+   sudo sed -i "${@:3:($#-3)}" "$WORK_DIR/$page"
+   sudo $1/bin/dwpage.php -u $2 commit -m "${@:($#):1}" "$WORK_DIR/$page" "$page"
 done
 rm -rf "$WORK_DIR"
